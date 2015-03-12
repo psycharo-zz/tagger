@@ -1,7 +1,12 @@
 # tagger
 a simplistic tool for tagging multiple objects in images
 
-# HOWTO
+# Usage
+```
+python tagger.py <path-to-dataset> <format>
+```
+`<format>` has to contain `%d`, e.g. `rgb%06d.png`
+
 When you switch frames, the current tag points are saved automatically and copied to the next frame
 - ']' - next frame
 - '[' - prev frame
