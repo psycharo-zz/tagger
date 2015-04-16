@@ -36,9 +36,10 @@ def main():
     def rescale_gt(gt, f):
         gt_rescaled = {}
         for fid in gt:
-            gt_rescaled[fid] = {}
-            for oid in gt[fid]:
-                gt_rescaled[fid][oid] = {'points' : rescale_points(gt[fid][oid]['points'], f)}
+            if len(gt[fid]) > 0:
+                gt_rescaled[fid] = {}
+                for oid in gt[fid]:
+                    gt_rescaled[fid][oid] = {'points' : rescale_points(gt[fid][oid]['points'], f)}
         return gt_rescaled
 
     def update_gt(overwrite=False):
