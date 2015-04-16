@@ -6,6 +6,7 @@ a simplistic tool for tagging multiple objects in images
 python tagger.py <path-to-dataset> <format> <resize_factor>
 ```
 `<format>` has to contain `%d`, e.g. `rgb%06d.png`
+
 `<resize_factor>` how to resize images when displaying
 
 When you switch frames, the current tag points are saved automatically and copied to the next frame
